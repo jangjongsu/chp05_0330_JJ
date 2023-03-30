@@ -7,7 +7,7 @@
 <title>회원가입</title>
 <script type="text/javascript">
 	function joinCheck() {
-		if (document.joinForm.id.value.char(0) < 'A' || document.joinForm.id.value.char(0) > 'Z'){
+		if (document.joinForm.id.value.charAt(0) < 'A' || document.joinForm.id.value.charAt(0) > 'Z'){
 			alert('아이디의 첫글자는 대문자여야 합니다.');
 			return false;
 		} else if(isNaN(document.joinForm.age.value)){
